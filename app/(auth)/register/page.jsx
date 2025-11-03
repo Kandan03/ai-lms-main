@@ -30,7 +30,11 @@ export default function LoginPage() {
         setError("Password do not match");
         return;
       }
-      const cred = await createUserWithEmailAndPassword(auth, email, passwordOne);
+      const cred = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        passwordOne
+      );
       console.log("Success. The user is created in Firebase");
 
       const idToken = await cred.user.getIdToken(/* forceRefresh */ true);
@@ -97,8 +101,6 @@ export default function LoginPage() {
                     id="signUpPassword"
                     placeholder="Password"
                   />
-                </Field>
-                <Field>
                   <Input
                     type="password"
                     name="password"
