@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "@/app/firebase/config";
+import AddCourse from "@/components/admin/AddCourse";
 
 const Dashboard = () => {
   useEffect(() => {
@@ -18,7 +19,7 @@ const Dashboard = () => {
 
   return (
     <div>
-      Dashboard
+      <AddCourse />
     </div>
   );
 };

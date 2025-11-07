@@ -68,10 +68,6 @@ function SideBar() {
 
       <div className="absolute bottom-10 w-[80%]">
         <Button onClick={handleLogout}>Logout</Button>
-        <h2 className="text-sm my-2"> Out of 5 Course created</h2>
-        <h2 className="text-xs text-gray-500">
-          Upgrade your plan for unlimted course generate
-        </h2>
       </div>
     </div>
   );
